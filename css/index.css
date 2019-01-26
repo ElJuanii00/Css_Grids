@@ -19,11 +19,14 @@ body{
   overflow: auto;
   background: blue;
   display: grid;
-  grid-template: 50% 50%/ 33% 33% 33%;
+  grid-template: 49% 49%/ 32% 32% 32%;
+  grid-gap: 2% 2%;
+  /* grid-column-gap: 2%; */
 }
 
 .item .sub_item{
   background: yellow;
   padding: 10px;
   border: 1px solid red;
+  /* margin: 0 1px; */
 }
