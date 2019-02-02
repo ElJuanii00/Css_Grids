@@ -10,7 +10,10 @@ body{
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(2, 200fr);
   grid-gap: 5px;
- text-align: center;
+  text-align: center;
+  /* grid-auto-flow: column; */
+  /* grid-auto-columns: 50px 100px; */
+  grid-auto-rows: 50px 100px;
 }
 
 .item{
