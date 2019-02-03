@@ -26,6 +26,7 @@ body{
 
 .level_1{
 grid-row-end: span 3;
+grid-area: level_1;
 }
 
 .level_2{
