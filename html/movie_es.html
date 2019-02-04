@@ -4,104 +4,130 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/movie_es.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Movie.es</title>
   </head>
   <body>
-    <header class="header">
-      <img src="../images/popcorn.png" alt="">
-      <h1>Movie.es</h1>
-      <input type="text" placeholder="Busca tu pelicula, actor, actriz o director favorito">
-      <button type="button" name="button"><i class="icon-search"></i></button>
-      <p>Bambi Rodriguez</p>
-      <img src="../images/bambi.jpg" alt="">
-    </header>
-    <nav class="nav">
-      <ul class="nav_list">
-        <li>
-          <i class="icon-home"></i>
-          <a class="nav_title" href="#">Home</a>
-        </li>
-        <li>
-          <i class="icon-fire"></i>
-          <a class="nav_title" href="#">Trending</a>
-        </li>
-        <li>
-          <i class="icon-heart"></i>
-          <a class="nav_title" href="#">Likes</a>
-        </li>
-        <li>
-          <i class="icon-cog"></i>
-          <a class="nav_title" href="#">Setings</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="movie_sec">
-      <h2>Now on cinemas</h2>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+    <div class="container">
+      <header class="header">
+        <div class="header_1">
+          <img class="header_logo" src="../images/popcorn.png" alt="" width="70px" height="70px">
+          <h1 class="header_tile">Movie.es</h1>
         </div>
-      </figure>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+        <form class="header_2" action="index.html" method="post">
+          <input class="header_search" type="text" placeholder="Busca tu pelicula, actor, actriz o director favorito">
+          <button class="header_buttom" type="button" name="button"><i class="icon-search"></i></button>
+        </form>
+        <div class="header_3">
+          <p class="header_name">Bambi Rodriguez</p>
+          <img class="header_avatar" src="../images/bambi.jpg" alt="">
         </div>
-      </figure>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
-        </div>
-      </figure>
-      <h2>Rating from the critics</h2>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
-        </div>
-      </figure>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
-        </div>
-      </figure>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
-        </div>
-      </figure>
-      <h2>You can't miss this</h2>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
-        </div>
-      </figure>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
-        </div>
-      </figure>
-      <figure class="movie_fig">
-        <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
-        <div class="movie_description">
-          <h3>The Secret Like of Pets</h3>
-          <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
-        </div>
-      </figure>
-    </section>
+      </header>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="list_home">
+            <a class="nav_title" href="#"><i class="icon-home"></i>Home</a>
+          </li>
+          <li class="list_trending">
+            <a class="nav_title" href="#"><i class="icon-fire"></i>Trending</a>
+          </li>
+          <li class="list_heart">
+            <a class="nav_title" href="#"><i class="icon-heart"></i>Likes</a>
+          </li>
+          <li class="list_cog">
+            <a class="nav_title" href="#"><i class="icon-cog"></i>Setings</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav_buttom">
+        <i class="icon-circle-right"></i>
+      </div>
+      <section class="movie_sec">
+        <h2 class="movie_title movie_title_1">Now on cinemas</h2>
+        <a class="movies_overlay movie_1_1" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <a class="movies_overlay movie_1_2" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <a class="movies_overlay movie_1_3" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <h2 class="movie_title movie_title_2">Ratings from critics</h2>
+        <a class="movies_overlay movie_2_1" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <a class="movies_overlay movie_2_2" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <a class="movies_overlay movie_2_3" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <h2 class="movie_title movie_title_3">You can't missed it</h2>
+        <a class="movies_overlay movie_3_1" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <a class="movies_overlay movie_3_2" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+        <a class="movies_overlay movie_3_3" href="">
+          <figure class="movie_fig">
+            <img class="movie" src="../images/pets.jpg" alt="" width="400px" height="220px">
+          </figure>
+          <span class="movie_description">
+            <h3>The Secret Like of Pets</h3>
+            <p>The quiet life of a terrier named Max is unpended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+          </span>
+        </a>
+      </section>
+    </div>
   </body>
 </html>

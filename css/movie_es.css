@@ -5,11 +5,11 @@ body{
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?iehmsi');
-  src:  url('../fonts/icomoon.eot?iehmsi#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?iehmsi') format('truetype'),
-    url('../fonts/icomoon.woff?iehmsi') format('woff'),
-    url('../fonts/icomoon.svg?iehmsi#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?yp3tnd');
+  src:  url('../fonts/icomoon.eot?yp3tnd#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?yp3tnd') format('truetype'),
+    url('../fonts/icomoon.woff?yp3tnd') format('woff'),
+    url('../fonts/icomoon.svg?yp3tnd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,18 +31,34 @@ body{
 
 .icon-home:before {
   content: "\e900";
+  display: block;
+  text-align: center;
 }
 .icon-search:before {
   content: "\e986";
+  display: block;
+  text-align: center;
 }
 .icon-cog:before {
   content: "\e994";
+  display: block;
+  text-align: center;
 }
 .icon-fire:before {
   content: "\e9a9";
+  display: block;
+  text-align: center;
 }
 .icon-heart:before {
   content: "\e9da";
+  display: block;
+  text-align: center;
+}
+
+.icon-circle-right:before {
+  content: "\ea42";
+  display: block;
+  text-align: center;
 }
 
 .nav_list{
@@ -56,4 +72,294 @@ body{
 
 .movie_fig{
   margin: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: "header header"
+                       "nav movie_sec"
+}
+
+.nav{
+  grid-area: nav;
+  background-color: #fd6766;
+}
+
+.movie_sec{
+  grid-area: movie_sec;
+}
+
+.header{
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  grid-template-rows: 80px;
+  /* grid-gap: 5px; */
+  justify-items: center;
+  align-items: center;
+}
+
+                    /* header */
+
+.header_1, .header_2, .header_3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_tile{
+  font-size: 2em;
+  font-weight: bold;
+  color: #fd6766;
+}
+
+.header_search{
+  width: 80%;
+  height: 25px;
+  margin-right: 10px;
+  border: 1px solid #b2b1b6;
+  border-radius: .25em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.header_buttom{
+  height: 43px;
+  width: 43px;
+  font-size: 1em;
+  background-color: #fd6766;
+  border: 1px solid #b2b1b6;
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_name{
+  color: #3c464f;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.header_logo, .header_avatar{
+  width: 65px;
+  height: auto;
+}
+
+.header_avatar{
+  border-radius: 50%;
+}
+
+                  /* nav */
+
+.nav_list{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 150px) 1fr 150px;
+  grid-template-areas: "list_home"
+                       "list_trending"
+                       "list_heart"
+                       "."
+                       "list_cog";
+  padding: 0;
+  margin: 0;
+}
+
+.list_home{
+  grid-area: list_home;
+}
+
+.list_trending{
+  grid-area: list_trending;
+}
+
+.list_heart{
+  grid-area: list_heart;
+}
+
+.list_cog{
+  grid-area: list_cog;
+}
+
+.list_home, .list_trending, .list_heart, .list_cog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.nav_title{
+  color: white;
+  font-size: 0.6em;
+}
+
+.nav_title i{
+  font-size: 2em;
+}
+
+.movie_sec{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(315px, 350px));
+  grid-template-rows: repeat(3, 50px 200px);
+  grid-template-areas: "movie_title_1 movie_title_1 movie_title_1"
+                       "movie_1_1 movie_1_2 movie_1_3"
+                       "movie_title_2 movie_title_2 movie_title_2"
+                       "movie_2_1 movie_2_2 movie_2_3"
+                       "movie_title_3 movie_title_3 movie_title_3"
+                       "movie_3_1 movie_3_2 movie_3_3";
+ grid-gap: 0 10px;
+ justify-content: space-evenly;
+ padding-bottom: 50px;
+ background-color: rgba(80, 80, 80, 0.05);
+ padding: 10px;
+ grid-auto
+}
+
+.movies_overlay{
+  position: relative;
+}
+
+.movie{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* position: relative; */
+}
+
+.movie_fig{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie_title{
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.movie_description{
+  position: absolute;
+  height: 55%;
+  background: rgba(253,103,102,.72941);
+  bottom: 0px;
+  /* height: 100%; */
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.movie_description:hover{
+  height: 100%;
+}
+
+.movie_description h3{
+  color: white;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.movie_description p{
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+.movie_title_1{
+  grid-area: movie_title_1;
+}
+.movie_1_1{
+  grid-area: movie_1_1;
+}
+.movie_1_2{
+  grid-area: movie_1_2;
+}
+.movie_1_3{
+  grid-area: movie_1_3;
+}
+.movie_title_2{
+  grid-area: movie_title_2;
+}
+.movie_2_1{
+  grid-area: movie_2_1;
+}
+.movie_2_2{
+  grid-area: movie_2_2;
+}
+.movie_2_3{
+  grid-area: movie_2_3;
+}
+.movie_title_3{
+  grid-area: movie_title_3;
+}
+.movie_3_1{
+  grid-area: movie_3_1;
+}
+.movie_3_2{
+  grid-area: movie_3_2;
+}
+.movie_3_3{
+  grid-area: movie_3_3;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "header header"
+                         "nav_buttom movie_sec"
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .nav_buttom{
+    grid-area: nav_buttom;
+    height: 50px;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color:  #fd6766;
+  }
+
+  .nav_buttom i{
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+  }
+
+  .nav_list{
+    left: 10px;
+  }
+
+  .movie_sec{
+    grid-template-columns: repeat(2, minmax(315px, 350px));
+    grid-template-rows: repeat(3, 50px 200px 200px);
+    grid-template-areas: "movie_title_1 ."
+                         "movie_1_1 movie_1_2"
+                         "movie_1_3 ."
+                         "movie_title_2 movie_title_2"
+                         "movie_2_1 movie_2_2"
+                         "movie_2_3 ."
+                         "movie_title_3 movie_title_3"
+                         "movie_3_1 movie_3_2"
+                         "movie_3_3 .";
+   grid-gap: 10px;
+  }
 }
